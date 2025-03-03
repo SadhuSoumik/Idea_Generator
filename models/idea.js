@@ -1,14 +1,11 @@
-// models/idea.js
-// Backend/routes/ideas.js
+/
 const express = require('express');
 const router = express.Router();
 const ideaController = require('../controllers/ideaController');
-const auth = require('../middleware/auth');  // This path should be correct now
+const auth = require('../middleware/auth');
 const { freeLimiter, premiumLimiter } = require('../middleware/rateLimit');
 const checkPremium = require('../middleware/premium');
 const { validateIdeaGeneration } = require('../utils/validation');
-
-// ... rest of your code
 
 
 class Idea {

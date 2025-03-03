@@ -1,4 +1,3 @@
-// utils/validation.js
 const validateRegistration = (req, res, next) => {
     const { email, password, name } = req.body;
   

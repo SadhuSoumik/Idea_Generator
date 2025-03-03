@@ -1,4 +1,3 @@
-  // models/subscription.js
   class Subscription {
     static async create({ userId, planId, paymentId, status }) {
       const result = await pool.query(

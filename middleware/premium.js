@@ -1,4 +1,3 @@
-// middleware/premium.js
 const checkPremium = async (req, res, next) => {
     try {
       const result = await pool.query(

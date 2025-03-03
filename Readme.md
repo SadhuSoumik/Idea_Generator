@@ -33,11 +33,10 @@ To clone the repository and set up the backend application, follow these steps:
 1. **Clone the Repository**
 
 ```sh
- git clone https://github.com/your-username/business-idea-generator-backend.git
+ git clone https://github.com/sadhusoumik/business-idea-generator-backend.git
    cd business-idea-generator-backend
-
-   Install Dependencies
 ```
+## Install Dependencies
 
 ```sh
 npm install

@@ -1,4 +1,3 @@
-// services/paymentService.js
 const razorpay = require('../config/razorpay-config');
 
 const paymentService = {

@@ -1,4 +1,3 @@
-// controllers/subscriptionController.js
 const razorpay = require('../config/razorpay-config');
 const Subscription = require('../models/subscription');
 const User = require('../models/user');
@@ -7,7 +6,7 @@ const subscriptionController = {
   async createOrder(req, res) {
     try {
       const options = {
-        amount: 99900,  // amount in paise (₹999)
+        amount: 9900,  // amount in paise (₹99)
         currency: "INR",
         receipt: `order_${Date.now()}`
       };

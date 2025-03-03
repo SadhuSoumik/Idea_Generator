@@ -1,4 +1,4 @@
-// server.js
+
 const express = require("express");
 const cors = require("cors");
 const helmet = require("helmet");
@@ -27,10 +27,10 @@ app.use(express.json({ limit: "10mb" }));
 // trust proxy setting
 app.set("trust proxy", 1);
 
-// Basic rate limiting
+
 const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100, // limit each IP to 100 requests per windowMs
+  windowMs: 15 * 60 * 1000, 
+  max: 100, // 
 });
 app.use(limiter);
 
@@ -39,7 +39,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/ideas", ideaRoutes);
 app.use("/api/subscription", subscriptionRoutes);
 
-// Error handling middleware
+// Error handling
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(err.status || 500).json({

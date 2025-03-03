@@ -1,5 +1,4 @@
 
-// controllers/ideaController.js
 const aiService = require('../services/aiService');
 const Idea = require('../models/idea');
 

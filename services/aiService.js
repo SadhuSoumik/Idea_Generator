@@ -1,4 +1,3 @@
-// services/aiService.js
 const aiClient = require('../config/ai-config');
 
 const aiService = {
