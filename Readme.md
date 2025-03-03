@@ -71,15 +71,22 @@ The server should now be running on http://localhost:5000.
 
 ## API Endpoints
 
-**Authentication**
+**Authentication ->**
 
 **POST /api/auth/register:** Register a new user.
+
 **POST /api/auth/login:** Log in an existing user.
 
-**Ideas**
+
+**Ideas ->**
+
 **POST /api/ideas/generate:** Generate a new business idea.
+
 **GET /api/ideas/history:** Get the user's idea history.
 
-**Subscription**
+
+**Subscription ->**
+
 **POST /api/subscription/create-order:** Create a new subscription order.
+
 **POST /api/subscription/verify-payment:** Verify a payment
